@@ -1,0 +1,112 @@
+.calculator-button {
+  border: none;
+  outline: none;
+  font-size: 1.5rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  background-color: var(--surface-color);
+  color: var(--text-primary);
+  padding: 20px;
+  min-height: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  user-select: none;
+}
+
+.calculator-button:hover {
+  filter: brightness(0.95);
+  transform: scale(0.98);
+}
+
+.calculator-button:active {
+  transform: scale(0.95);
+  filter: brightness(0.9);
+}
+
+/* Number buttons */
+.number-button {
+  background-color: var(--surface-color);
+  color: var(--text-primary);
+}
+
+.number-button:hover {
+  background-color: #f1f5f9;
+}
+
+/* Operator buttons */
+.operator-button {
+  background-color: var(--primary-color);
+  color: white;
+}
+
+.operator-button:hover {
+  background-color: #1d4ed8;
+}
+
+/* Equals button */
+.equals-button {
+  background-color: var(--success-color);
+  color: white;
+}
+
+.equals-button:hover {
+  background-color: #059669;
+}
+
+/* Clear button */
+.clear-button {
+  background-color: var(--danger-color);
+  color: white;
+}
+
+.clear-button:hover {
+  background-color: #dc2626;
+}
+
+/* Decimal button */
+.decimal-button {
+  background-color: var(--surface-color);
+  color: var(--text-primary);
+}
+
+.decimal-button:hover {
+  background-color: #f1f5f9;
+}
+
+/* Parentheses buttons */
+.parentheses-button {
+  background-color: var(--secondary-color);
+  color: white;
+}
+
+.parentheses-button:hover {
+  background-color: #475569;
+}
+
+/* Percentage button */
+.percentage-button {
+  background-color: var(--accent-color);
+  color: white;
+}
+
+.percentage-button:hover {
+  background-color: #d97706;
+}
+
+@media (max-width: 480px) {
+  .calculator-button {
+    font-size: 1.2rem;
+    padding: 15px;
+    min-height: 50px;
+  }
+}
+
+@media (max-width: 360px) {
+  .calculator-button {
+    font-size: 1rem;
+    padding: 12px;
+    min-height: 45px;
+  }
+} 
