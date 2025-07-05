@@ -40,6 +40,7 @@ const Calculator = () => {
   const handleEquals = () => {
     try {
       const fullExpression = expression + display;
+      // eslint-disable-next-line no-eval
       const result = eval(fullExpression);
       setDisplay(String(result));
       setExpression('');
